@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Profil #{user.name}
+    link(rel="stylesheet", href="/styles.css")
+  body
+    h1 #{user.name}
+    p #{user.bio}
+    a(href="/users") Back to Users

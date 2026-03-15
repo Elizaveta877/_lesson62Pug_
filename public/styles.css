@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container, body > h1, body > ul, body > p {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fafafa;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.2s;
+    border-left: 5px solid #3498db;
+}
+
+li:hover {
+    transform: translateX(10px);
+    background: #eef7fd;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+a[href="/users"], a[href="/articles"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a[href="/users"]:hover, a[href="/articles"]:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
